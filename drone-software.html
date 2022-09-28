@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- elements -->
+		<!-- samp -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>Drone Software</title>
+</head>
+<body>
+    <header class="inter" role="banner">
+			<nav class="navbar" role="navigation">
+				<a
+					class="logo abril"
+					href="drone-types.html"
+					title="Drone categories"
+					style="float: left"
+					>Drones</a
+				>
+				<ul>
+					<li>
+						<a
+							class="nav-link"
+							href="drone-software.html"
+							title="Airplane drones"
+							>Drone Software</a
+						>
+					</li>
+					<li>
+						<a
+							class="nav-link"
+							href="racing-drones.html"
+							title="FPV racing drones"
+							>Racing Drones</a
+						>
+					</li>
+					<li>
+						<a
+							class="nav-link"
+							href="dji-drones.html"
+							title="DJI made drones"
+							>DJI Drones</a
+						>
+					</li>
+					<li>
+						<a
+							class="nav-link"
+							href="drone-types.html"
+							title="Drone categories"
+							>Drone Types</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="article-container" role="main">
+			<article class="content-width inter">
+				<header >
+					<h1>Betaflight Software</h1>
+					<p>Betaflight is flight controller software (firmware) used to fly multi-rotor craft and fixed wing craft. This fork differs from Baseflight and Cleanflight in that it focuses on flight performance, leading-edge feature additions, and wide target support.</p>
+				</header>
+				<section>
+					<img src="./images/betaflight.jpeg" width="100%" alt="betaflight software"/>
+					<h2>Install Betaflight Configurator</h2>
+					<p>In order to setup and configure Betaflight, you need the Betaflight Configurator. You can download it from <a target="_blank" title="betaflight download" href="https://github.com/betaflight/betaflight-configurator/releases">here.</a></p>
+				</section>
+				<section>
+					<h2>Older (F4 based) Flight Controllers</h2>
+					<p>For older flight controllers (BRAINRE1, RADIX, RADIX LI), use the Betaflight configurator to flash the firmware as follows.</p>
+					<ol>
+						<li>Download the hex file for your flight controller from the Logo Customizer page. Simply click on your favorite logo (or make your own!) and download the hex file for your flight controller (“RADIX” for RADIX, “BRAINRE1” for RE1, etc.). Alternatively, you can find older and testing releases on the GitHub release page.</li>
+						<li>Start the Betaflight Configurator and click on <b>“Firmware Flasher”</b> on the left side.</li>
+						<li>On the bottom, click on “Load Firmware [Local]” and select the hex file you downloaded in Step 1.</li>
+
+						<!-- Samp element is used to display system error -->
+						<li>On the bottom, click on “Flash Firmware”. This should initiate the flashing process. If it doesn’t work (e.g. if you get a "<samp >Could not connect to bootloader</samp>" error), you may have a driver problem. See below.</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Fixing Driver Problems</h2>
+					
+					<!-- Samp element is used to display system error -->
+					<p>If flashing doesn’t work and you get a “<samp>not connected to bootloader</samp>” error, you most likely have a driver problem. On Windows use the driver fixer” to resolve this problem. See this guide for more information.</p>
+				</section>
+			</article>
+		</main>
+        <footer class="footer" role="contentinfo">
+            <div>
+                © 2022 Drones
+            </div>
+        </footer>
+</body>
+</html>
